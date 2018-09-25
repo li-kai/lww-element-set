@@ -1,0 +1,15 @@
+<html>
+
+<body>
+  <script src="../dist/lww-element-set.umd.js"></script>
+</body>
+
+</html>
+<script>
+  const crdtSet = new LwwElementSet();
+  crdtSet.add("a", 1);
+  crdtSet.add("b", 2);
+  crdtSet.remove("b", 3);
+  crdtSet.add("b", 5);
+  console.log(crdtSet.get());
+</script>

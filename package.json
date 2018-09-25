@@ -1,0 +1,42 @@
+{
+  "name": "lww-element-set",
+  "version": "1.0.1",
+  "main": "dist/lww-element-set.cjs.js",
+  "module": "dist/lww-element-set.esm.js",
+  "browser": "dist/lww-element-set.umd.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/li-kai/lww-element-set"
+  },
+  "devDependencies": {
+    "@babel/core": "7.1.0",
+    "@babel/preset-env": "7.1.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "rollup": "0.66.2",
+    "rollup-plugin-babel": "4.0.3",
+    "rollup-plugin-commonjs": "9.1.8",
+    "rollup-plugin-node-resolve": "3.4.0"
+  },
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "test": "jest"
+  },
+  "renovate": {
+    "extends": [
+      "config:js-lib"
+    ],
+    "automerge": true,
+    "major": {
+      "automerge": false
+    },
+    "automergeType": "branch"
+  },
+  "files": [
+    "dist"
+  ]
+}
